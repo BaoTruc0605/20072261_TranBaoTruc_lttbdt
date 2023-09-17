@@ -11,25 +11,30 @@ function checkWiner() {
         let average2 = ((score4 + score5 + score6) / 3).toFixed(2)
         document.getElementById('average1').value = average1;
         document.getElementById('average2').value = average2;
-
+        console.log(average1)
+        console.log(average2)
         if(average1>99){
             if(average1>average2){
                 document.getElementById('result').value = 'Dolphin win with ' + average1+' vs '+average2;
-                
+                console.log('Dolphin win with ' + average1+' vs '+average2)   
             }
             else if(average1<average2){
                 document.getElementById('result').value = 'Koalas win with'+ average2+' vs '+average1;
+                console.log('Koalas win with'+ average2+' vs '+average1)   
             }
             else if(average1==average2){
                 document.getElementById('result').value = 'Dolphin and Koalas win with score : ' + average1;
+                console.log('Dolphin and Koalas win with score : ' + average1)   
             }
            
         }
         else if(average2>99){
                 document.getElementById('result').value = 'Koalas win with '+ average2+' vs '+average1;
+                console.log('Koalas win with '+ average2+' vs '+average1)
         }
         else{
             document.getElementById('result').value = 'No winer with ' + average1+' vs '+average2;
+            console.log('No winer with ' + average1+' vs '+average2)
         }
     }
 }
