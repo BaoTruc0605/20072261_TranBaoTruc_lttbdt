@@ -23,8 +23,8 @@ function calculateBMI() {
             console.log("Mark's BMI is higher than John's!")
             console.log(`Mark's BMI ${bmiMark} is higher than John's ${bmiJohn}!`)
         }
-        else if (!markHigherBMI) {
-            console.log("John's BMI is  than Mark's!")
+        else if (bmiMark < bmiJohn) {
+            console.log("John's BMI is than Mark's!")
             console.log(`John's ${bmiJohn} is higher than Mark's BMI ${bmiMark}!`)
         }
         else {
