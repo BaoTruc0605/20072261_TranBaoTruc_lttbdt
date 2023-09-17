@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='BMI.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <form action="data">
+            Mass Mark:<br>
+            <input type="text" id="massMark">
+            <br> Height Mark:<br>
+            <input type="text" id="heightMark">
+            <br>Mass John:<br>
+            <input type="text" id="massJohn">
+            <br>Height John:<br>
+            <input type="text" id="heightJohn">
+        </form>
+        <br> <button id="btnCalculate" onclick="calculateBMI()">Calculate</button><br>
+        <form action="result">
+            <br> Mark's BMI:<br>
+            <input type="text" id="BMIMark">
+            <br> John's BMI:<br>
+            <input type="text" id="BMIJohn">
+            <br>Mark's BMI higher than John's BMI<br>
+            <input type="text" id="result">
+        </form>
+    </div>
+</body>
+
+</html>
