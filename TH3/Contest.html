@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BaoTruc_TH3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='Contest.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" style="text-align: center;">
+            Dolphins's score:
+            <input type="text" id="score1" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <input type="text" id="score2" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <input type="text" id="score3" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <br><br>
+            Koalas's score:
+            <input type="text" id="score4" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <input type="text" id="score5" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <input type="text" id="score6" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
+            <br><br>
+        </form>
+        <input type="submit" value="Calculate" onclick="checkWiner()">
+        <form action="">
+            <br><br>
+            Dolphins's average:
+            <input type="text" id="average1" disabled><br><br>
+            Koalas's average:
+            <input type="text" id="average2" disabled>
+            <br><br><br>
+            Result: <br>
+            <textarea id="result" cols="50" rows="3"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>
