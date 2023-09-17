@@ -7,30 +7,33 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='BMI.js'></script>
+    <title>TH2_BaoTruc</title>
+</head>
 </head>
 
 <body>
     <div class="container">
         <h1>BMI calculator</h1>
-        <form action="data">
+        <form >
             Mass Mark:<br>
-            <input type="text" id="massMark">
+            <input type="text" id="massMark" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
             <br> Height Mark:<br>
-            <input type="text" id="heightMark">
+            <input type="text" id="heightMark" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required >
             <br>Mass John:<br>
-            <input type="text" id="massJohn">
+            <input type="text" id="massJohn" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
             <br>Height John:<br>
-            <input type="text" id="heightJohn">
+            <input type="text" id="heightJohn" pattern="[0-9]+(\.[0-9]+)?" title="Chỉ nhập số" required>
         </form>
         <br> <button id="btnCalculate" onclick="calculateBMI()">Calculate</button><br>
-        <form action="result">
+        <form action="">
             <br> Mark's BMI:<br>
-            <input type="text" id="BMIMark">
+            <input type="text" id="BMIMark" disabled>
             <br> John's BMI:<br>
-            <input type="text" id="BMIJohn">
+            <input type="text" id="BMIJohn" disabled>
             <br>Mark's BMI higher than John's BMI<br>
-            <input type="text" id="result">
+            <input type="text" id="result" disabled>
         </form>
+      
     </div>
 </body>
 
